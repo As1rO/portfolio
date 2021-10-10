@@ -172,3 +172,25 @@
 //     console.log("haut");
 //   }
 // });
+
+///////////////////
+
+const tctContent = document.querySelector(".txt-content");
+const projetEl = document.querySelectorAll(".projet__el");
+
+projetEl.forEach((element) => {
+  element.addEventListener("mouseenter", (e) => {
+    let contentEl = element.childNodes[1].childNodes[3];
+    contentEl.style.opacity = "0";
+    contentEl.style.display = "block";
+    contentEl.classList.add("txt-content--open");
+  });
+});
+
+projetEl.forEach((element) => {
+  let contentEl = element.childNodes[1].childNodes[3];
+  element.addEventListener("mouseleave", (e) => {
+    contentEl.style.display = "none";
+    contentEl.classList.remove("txt-content--open");
+  });
+});
