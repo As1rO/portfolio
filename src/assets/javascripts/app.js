@@ -194,3 +194,10 @@ projetEl.forEach((element) => {
     contentEl.classList.remove("txt-content--open");
   });
 });
+
+const buttonNav = document.querySelector(".button");
+const nav = document.querySelector(".nav");
+
+buttonNav.addEventListener("click", (e) => {
+  nav.classList.toggle("nav--open");
+});
