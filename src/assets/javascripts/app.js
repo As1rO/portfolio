@@ -198,6 +198,11 @@ projetEl.forEach((element) => {
 const buttonNav = document.querySelector(".button");
 const nav = document.querySelector(".nav");
 
+
 buttonNav.addEventListener("click", (e) => {
   nav.classList.toggle("nav--open");
+  buttonNav.classList.toggle('button--open')
+
 });
+
+

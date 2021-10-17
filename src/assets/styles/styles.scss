@@ -48,11 +48,18 @@
   background-color: transparent;
   width: 50px;
   height: 50px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 25px;
   transform: translate(0, -50%);
   z-index: 75;
+  cursor: pointer;
+  transition: transform 0.3s ease-in, opacity 0.3s;
+}
+
+.button--open{
+  transition: transform 0.3s ease-out, opacity 0.3s;
+  transform: translate(950%);
 }
 h1 {
   font-weight: 800;
@@ -88,7 +95,7 @@ h2 {
 
 .section--2,
 .section--3 {
-  background-color: var(--color-blue);
+  // background-color: var(--color-blue);
   // position: absolute;
   // top: 0;
   // display: none;
@@ -100,7 +107,8 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding-bottom: 25px;
-    color: #fff;
+    // color: #fff;
+    color: #1C1C1C;
     max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
@@ -133,9 +141,7 @@ h2 {
   }
 }
 
-.about::after {
-  content: "";
-}
+
 .wdd2 {
   max-width: 600px;
   padding: 0px 0px 100px 100px;
@@ -268,7 +274,7 @@ h2 {
 
 .section--3 {
   padding-top: 100px;
-  background-color: #000;
+  // background-color: #000;
   .projet-content {
     width: 1000px;
 
@@ -361,4 +367,18 @@ h2 {
   100% {
     opacity: 1;
   }
+}
+.projet{
+  position: relative;
+  display: block;
+}
+.projet::after{
+content: "";
+display: block;
+width: 25px;
+height: 25px;
+background-color: red;
+position: absolute;
+right: 53%;
+top: 50%;
 }
