@@ -1,9 +1,137 @@
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-// var tl = gsap.timeline();
+function ftlIn() {
+  var tlIn = gsap.timeline();
+
+  tlIn.to(".hide-bar", {
+    y: 600,
+    duration: 0.9,
+    ease: "power2.in",
+    display: "none",
+    delay: 0.5,
+  });
+
+  tlIn.to(".hide-bar2", {
+    y: -600,
+    delay: -0.9,
+    duration: 0.9,
+    ease: "power2.in",
+    display: "none",
+  });
+  tlIn.to(".line", {
+    right: "75%",
+    duration: 1.2,
+    ease: "power2.out",
+  });
+  tlIn.to(".hide-red", {
+    x: -950,
+    duration: 1.27,
+    ease: "power2.out",
+    delay: -1.2,
+  });
+  tlIn.to("#link1", {
+    opacity: 1,
+    y: 10,
+    scale: 1,
+    duration: 0.3,
+
+    ease: "power2",
+  });
+  tlIn.to("#link2", {
+    opacity: 1,
+    y: 10,
+    scale: 1,
+    duration: 0.3,
+    ease: "power2",
+  });
+  tlIn.to("#link3", {
+    opacity: 1,
+    y: 10,
+    scale: 1,
+    duration: 0.3,
+    ease: "power2",
+  });
+
+  tlIn.to(".scrollDown", {
+    duration: 0.4,
+    opacity: 1,
+  });
+  tlIn.to(".button", {
+    duration: 0.4,
+    opacity: 1,
+    delay: -0.4,
+  });
+}
+///////////////
+function ftlOut() {
+  var tlOut = gsap.timeline();
+
+  // tlOut.to(".button", {
+  //   duration: 0.4,
+  //   opacity: 0,
+  // });
+
+  tlOut.to(".scrollDown", {
+    duration: 0.4,
+    opacity: 0,
+    delay: -0.4,
+  });
+
+  tlOut.to("#link1", {
+    opacity: 0,
+    y: 10,
+    scale: 1,
+    duration: 0.3,
+
+    ease: "power2.out",
+  });
+  tlOut.to("#link2", {
+    opacity: 0,
+    y: 10,
+    scale: 1,
+    duration: 0.3,
+    ease: "power2.out",
+  });
+  tlOut.to("#link3", {
+    opacity: 0,
+    y: 10,
+    scale: 1,
+    duration: 0.3,
+    ease: "power2.out",
+  });
+
+  tlOut.to(".hide-red", {
+    x: 0,
+    duration: 1.1,
+    ease: "power2.out",
+  });
+
+  tlOut.to(".line", {
+    right: "10%",
+
+    duration: 1.2,
+    delay: -1.1,
+    ease: "power2.out",
+  });
+
+  tlOut.to(".hide-bar", {
+    y: 0,
+    duration: 0.4,
+    ease: "power2.out",
+    display: "block",
+  });
+
+  tlOut.to(".hide-bar2", {
+    y: 0,
+    delay: -0.4,
+    duration: 0.4,
+    ease: "power2.out",
+    display: "block",
+  });
+}
 
 // gsap.to(".hide-bar", {
 //   y: 600,
@@ -195,14 +323,45 @@ projetEl.forEach((element) => {
   });
 });
 
+var check = true;
 const buttonNav = document.querySelector(".button");
 const nav = document.querySelector(".nav");
-
-
+ftlIn();
 buttonNav.addEventListener("click", (e) => {
-  nav.classList.toggle("nav--open");
-  buttonNav.classList.toggle('button--open')
+  if (check === true) {
+    ftlOut();
+    gsap.to(".content-1", {
+      duration: 0.5,
+      delay: 3.6,
+      x: -1150,
+      position: "absolute",
+      ease: "power2.out",
+    });
+    gsap.to(".section--3", {
+      opacity: "1",
+      duration: 0.4,
+      delay: 4.1,
+      ease: "power2.in",
+    });
+    check = false;
+  } else {
+    ftlIn();
+    gsap.to(".content-1", {
+      x: 0,
+      duration: 0.5,
+      position: "relative",
+      ease: "power2.in",
+      delay: 0.5,
+    });
 
+    gsap.to(".section--3", {
+      opacity: "0",
+      duration: 0.4,
+      ease: "power2.in",
+    });
+    check = true;
+  }
+
+  // nav.classList.toggle("nav--open");
+  // buttonNav.classList.toggle("button--open");
 });
-
-
