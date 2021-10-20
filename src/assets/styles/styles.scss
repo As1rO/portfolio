@@ -25,16 +25,60 @@ body {
 }
 
 .nav {
-  width: 40%;
+  width: 15%;
   min-width: 400px;
   max-width: 600px;
   height: 100vh;
-  color: #fff;
+  color: #1c1c1c;
   position: fixed;
-  background-color: var(--color-red);
+  background-color: #fff;
   z-index: 70;
   transition: transform 0.4s ease-out, opacity 0.4s;
   transform: translate(0);
+}
+
+.content-txt {
+  margin-top: 150px;
+
+  h2 {
+    font-family: var(--font-familyB);
+    font-weight: 700;
+    font-size: 8rem;
+    margin-bottom: 70px;
+    color: var(--color-red);
+  }
+  h3 {
+    margin-bottom: 15px;
+  }
+  ul {
+    margin: 70px 0 0 0;
+    font-size: 25px;
+  }
+
+  & li {
+    margin-bottom: 15px;
+  }
+  & li:before {
+    content: "\2192";
+    color: var(--color-red);
+  }
+}
+.nav--open {
+  transition: transform 0.4s ease-out, opacity 0.4s;
+  transform: translate(-100%);
+}
+
+.nav--openb {
+  transition: transform 0.4s ease-in, opacity 0.4s;
+  transform: translate(330%);
+}
+
+.translate-content {
+  transform: translate(400px, 0);
+}
+
+.translate-contentb {
+  transform: translate(400px, 0);
 }
 
 .content-txt {
@@ -55,11 +99,6 @@ body {
   }
 }
 
-.nav--open {
-  transition: transform 0.4s ease-out, opacity 0.4s;
-  transform: translate(-100%);
-}
-
 .button {
   display: block;
   background-image: url("../images/menu.svg");
@@ -76,6 +115,7 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease-in, opacity 0.3s;
   opacity: 0;
+  border: none;
 }
 
 .button--open {
@@ -106,6 +146,7 @@ h2 {
   // background-color: var(--color-red);
   overflow: hidden;
   width: 100vw;
+  transition: transform 0.4s ease-out, opacity 0.4s;
 }
 
 .content-1 {
@@ -307,12 +348,14 @@ h2 {
   display: flex;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.9);
+  transition: transform 0.3s ease-out, opacity 0.3s;
 
   & .content-3 {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto 0 auto;
+    gap: 50px;
 
     & li:hover:nth-child(1) {
       box-shadow: -10px -10px 15px -14px #fff;
@@ -433,49 +476,8 @@ h2 {
   }
 }
 
-// & img {
-//   display: block;
-//   width: 100%;
-//   transition: 0.3s;
-// }
-// & a img {
-//   transition: transform 0.9s, filter 0.8s ease-in-out;
-
-//   filter: brightness(50%);
-// }
-// .projet__el a:hover {
-//   img {
-//     filter: brightness(100%);
-//     transform: scale(1.1);
-//   }
-
-//   .allo {
-//     opacity: 1;
-//   }
-// }
-
-// .allo {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   padding: 25px 15px 15px;
-//   width: 100%;
-//   font-family: "Raleway", sans-serif;
-//   font-size: 16px;
-//   color: white;
-//   opacity: 0;
-//   background: linear-gradient(
-//     0deg,
-//     rgba(0, 0, 0, 0.5) 0%,
-//     rgba(255, 255, 255, 0) 100%
-//   );
-//   transition: 0.3s;
-// }
-
 .test {
   display: flex;
-
-  // width: 100%;
 }
 
 .info {
@@ -528,6 +530,7 @@ h2 {
     top: 35px;
     right: 20px;
     z-index: 90;
+
     outline: none;
   }
 }
