@@ -481,11 +481,11 @@ h2 {
 .info {
   position: absolute;
   top: 50%;
-  // left: 50%;
+  left: 50%;
   color: #fff;
   font-family: nunito sans-serif;
   line-height: 1.4;
-  transform: translate(10%, -50%);
+  transform: translate(50%, -50%);
 
   .info-content {
     max-width: 500px;
