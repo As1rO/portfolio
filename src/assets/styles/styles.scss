@@ -255,6 +255,10 @@ h2 {
       opacity: 0;
       overflow: hidden;
 
+      &:hover {
+        transform: scale(1.4);
+      }
+
       &--link {
         background-image: url("../images/linkedin.svg");
       }
@@ -487,7 +491,7 @@ h2 {
   color: #fff;
   font-family: nunito sans-serif;
   line-height: 1.4;
-  transform: translate(50%, -50%);
+  transform: translate(30%, -50%);
 
   .info-content {
     max-width: 500px;
