@@ -7,3 +7,59 @@
   font-family: "gilroyLight";
   src: url("../fonts/Gilroy-Light.woff") format("woff");
 }
+
+.button {
+  display: block;
+  background-image: url("../images/menu.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+  z-index: 75;
+  cursor: pointer;
+  transition: transform 0.3s ease-in, opacity 0.3s;
+  opacity: 0;
+  border: none;
+}
+
+.button--close {
+  background-image: url("../images/closeW.svg");
+  left: 100px;
+  width: 30px;
+  height: 30px;
+  left: 300px;
+  top: 70px;
+}
+
+.button--open {
+  transition: transform 0.3s ease-out, opacity 0.3s;
+  transform: translate(950%);
+}
+
+.button-info {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-image: url("../images/closeW.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  position: fixed;
+  fill: blue;
+  top: 35px;
+
+  z-index: 90;
+  left: 950px;
+  outline: none;
+}

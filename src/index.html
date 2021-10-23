@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
   <head>
     <meta charset="UTF-8">
@@ -9,21 +9,33 @@
   </head>
 
   <body class="content">
-    <button class="button" href="#"></button>
+    <button class="button" id="buttonOpen" href="#"></button>
     <nav class="nav nav--open">
-      <div class="content-txt">
-        <h2>About</h2>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing </h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quasi ea esse neque molestias, labore
-          voluptatum quo! Nemo, velit. Praesentium, distinctio eum voluptatem totam atque dicta itaque in eaque
-          voluptate!</p>
-        <ul>
-          <li><a href="#"> Hire me </a></li>
-          <li><a href="#"> play </a></li>
-        </ul>
+      <div class="relative">
+        <div class="content-txt">
+          <h2>A propos</h2>
+          <p>Apprendre un language de programmation c'est comme apprendre une nouvelle langue. La limite des
+            possibilités n'est cantonnée qu'a ton imagination.</p>
+          <p></p>
+          <ul class="menu">
+            <li class="menu__el">
+              <div class="arrow"></div>
+              <a href="#">Hire me</a>
+            </li>
+            <li class="menu__el">
+              <div class="arrow"></div>
+              <a href="#"> play </a>
+            </li>
+          </ul>
+        </div>
+        <button class="button button--close display" id="buttonClose" href="#"></button>
+        <footer>
+          <div class="borderB"></div>
+          <p>Copyright 2021 © Denis Olivier - Tous droits réservés</p>
+        </footer>
       </div>
     </nav>
-    <div class="test">
+    <div class="contentb">
       <section class="section section--1">
         <div class="content-1">
           <div class="wdd">
@@ -46,69 +58,39 @@
           <div class="hide-red"></div>
         </div>
       </section>
-      <!-- <section class=" section section--2">
-        <div>
-          <div class="wdd2">
-            <h2 class="about">About</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing </h3>
-            <div class="content-txt">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quasi ea esse neque molestias, labore
-                voluptatum quo! Nemo, velit. Praesentium, distinctio eum voluptatem totam atque dicta itaque in eaque
-                voluptate!</p>
-            </div>
-          </div>
-          <div class="border"></div>
-        </div>
-        <p></p> -->
       </section>
-      <section class="section--3">
+      <section class="section--2">
         <div>
-          <ul class="content-3">
+          <ul class="content-2">
             <li>
               <a href="#">
                 <figure class="figure">
-                  <img src="./assets/images/port.jpg" alt="">
-                  <figcaption class="projet-name">Portrait</figcaption>
+                  <img src="./assets/images/projet1.jpg" alt="">
+                  <figcaption class="projet-name">art eyes</figcaption>
                 </figure>
               </a>
             </li>
             <li>
               <a href="#">
                 <figure class="figure">
-                  <img src="https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg" alt="">
-                  <figcaption class="projet-name">Portrait</figcaption>
+                  <img src="./assets/images/projet3.jpg" alt="">
+                  <figcaption class="projet-name">tabtab</figcaption>
                 </figure>
               </a>
             </li>
             <li>
               <a href="#">
                 <figure class="figure">
-                  <img src="./assets/images/port.jpg" alt="">
-                  <figcaption class="projet-name">Portrait</figcaption>
+                  <img src="./assets/images/projet4.jpg" alt="">
+                  <figcaption class="projet-name">πku</figcaption>
                 </figure>
               </a>
             </li>
             <li>
               <a href="#">
                 <figure class="figure">
-                  <img src="./assets/images/port.jpg" alt="">
-                  <figcaption class="projet-name">Portrait</figcaption>
-                </figure>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <figure class="figure">
-                  <img src="./assets/images/port.jpg" alt="">
-                  <figcaption class="projet-name">Portrait</figcaption>
-                </figure>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <figure class="figure">
-                  <img src="./assets/images/port.jpg" alt="">
-                  <figcaption class="projet-name">Portrait</figcaption>
+                  <img src="./assets/images/projet2.jpg" alt="">
+                  <figcaption class="projet-name">(sa)voir</figcaption>
                 </figure>
               </a>
             </li>
@@ -119,7 +101,7 @@
     </div>
     <div class="info display">
       <div class="info-flex">
-        <img src="./assets/images/port.jpg" alt="#">
+        <img class="img-open" data-key="image" src="./assets/images/port.jpg" alt="#">
         <div class="info-content">
           <h3 data-key="name">titre projet</h3>
           <h4 data-key="titre2">introduction en une phrase du projet et voila c'est tout</h4>
@@ -130,8 +112,9 @@
             maxime vel saepe ab dolor ipsum deleniti id doloribus hic quaerat veritatis similique, quis quo dolores odit
             iusto. </p>
         </div>
+        <a href="#">visiter </a>
       </div>
-      <button class="button-info">button</button>
+      <button class="button-info button">button</button>
     </div>
 
   </body>
