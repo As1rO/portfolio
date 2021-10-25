@@ -50,6 +50,6 @@ module.exports = {
     open: false,
     contentBase: path.resolve(__dirname, "./dist"),
     inline: true,
-    port: 4000,
+    port: 4002,
   },
 };

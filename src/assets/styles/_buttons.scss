@@ -1,0 +1,101 @@
+.link {
+  display: flex;
+  padding-top: 15px;
+
+  @include sm {
+    padding-top: 25px;
+  }
+  &__el {
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../images/github.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    text-indent: 100%;
+    overflow: hidden;
+    margin-right: 15px;
+
+    @include sm {
+      width: 40px;
+      height: 40px;
+      margin-right: 25px;
+    }
+
+    @include md {
+      width: 50px;
+      height: 50px;
+    }
+
+    &:hover,
+    active {
+      transform: scale(1.1) !important;
+      transition: transform 0.3s ease-in-out, opacity 0.3s;
+    }
+  }
+
+  &__el:nth-child(2) {
+    background-image: url("../images/linkedin.svg");
+  }
+
+  &__el:nth-child(3) {
+    background-image: url("../images/logo-behance.svg");
+  }
+}
+
+.scrollDown {
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/iconmonstr-arrow-65.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 5%;
+  animation-name: scrollDown;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  opacity: 1;
+}
+
+@keyframes scrollDown {
+  0% {
+    bottom: 4%;
+  }
+  100% {
+    bottom: 4.5%;
+  }
+}
+.button {
+  display: block;
+  background-image: url("../images/menu.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  transform: translate(0, -50%);
+  z-index: 75;
+  cursor: pointer;
+  opacity: 1;
+  border: none;
+
+  @include sm {
+    width: 50px;
+    height: 50px;
+  }
+
+  @include xl {
+    top: 50%;
+    left: 5%;
+  }
+}
+
+.button--close {
+  background-image: url("../images/closeW.svg");
+}

@@ -4,50 +4,50 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olivier Denis</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>portfolio2</title>
   </head>
 
-  <body class="content">
-    <button class="button" id="buttonOpen" href="#"></button>
-    <nav class="nav nav--open">
-      <div class="relative">
-        <div class="content-txt">
-          <h2>A propos</h2>
+  <body class="body">
+    <button class="button display"></button>
+    <nav class="nav nav--close">
+      <div class="flex-nav">
+        <div class="nav-content">
+          <h2 class="title title--r">A propos</h2>
           <p>Apprendre un language de programmation c'est comme apprendre une nouvelle langue. La limite des
             possibilités n'est cantonnée qu'a ton imagination.</p>
-          <p></p>
-          <ul class="menu">
-            <li class="menu__el">
-              <div class="arrow"></div>
-              <a href="#">Hire me</a>
+          <ul class="nav-list">
+            <li class="nav-list__el">
+              <div></div>
+              <a href="#">Contacter moi</a>
             </li>
-            <li class="menu__el">
-              <div class="arrow"></div>
-              <a href="#"> play </a>
+            <li class="nav-list__el">
+              <div></div>
+              <a href="#"> Jouer </a>
             </li>
           </ul>
         </div>
-        <button class="button button--close display" id="buttonClose" href="#"></button>
-        <footer>
-          <div class="borderB"></div>
+        <footer class="footer">
           <p>Copyright 2021 © Denis Olivier - Tous droits réservés</p>
         </footer>
       </div>
     </nav>
-    <div class="contentb">
-      <section class="section section--1">
-        <div class="content-1">
-          <div class="wdd">
-            <h1>Hi i’m Olivier</h1>
-            <h2>web developper & designer</h2>
+    <div class="flex-section">
+      <!-- <section class="section section--1">
+        <div class="flex-content">
+          <div class="content-1">
+            <h1 class="title">Hi i’m Olivier</h1>
+            <h2 class="title title--m">web developper & designer</h2>
             <ul class="link">
-              <li class="link__el" id="link1"> <a href="#">github</a></li>
-              <li class="link__el link__el--link" id="link2"><a href="#">linkedln</a></li>
-              <li class="link__el link__el--beh" id="link3"><a href="#">behance</a></li>
+              <li class="link__el"><a href="#">github</a></li>
+              <li class="link__el"><a href="#">linkedln</a></li>
+              <li class="link__el"><a href="#">behance</a></li>
             </ul>
           </div>
-          <svg class="line" width="90px" height="610">
+          <svg class="line display" width="90px" height="610">
             <line x1="0" y1="0" x2="90" y2="0" stroke="white" stroke-width="5px"></line>
             <line x1="0" y1="0" x2="0" y2="585" stroke="white" stroke-width="5px"></line>
             <line x1="0" y1="585" x2="90" y2="585" stroke="white" stroke-width="3px"></line>
@@ -57,69 +57,63 @@
           <div class="hide-bar2"></div>
           <div class="hide-red"></div>
         </div>
-      </section>
-      </section>
-      <section class="section--2">
-        <div>
-          <ul class="content-2">
-            <li>
+      </section> -->
+      <section class="section section--2">
+        <div class="content-2">
+          <ul class="flex-2 projet">
+            <li class="projet__el">
               <a href="#">
                 <figure class="figure">
                   <img src="./assets/images/projet1.jpg" alt="">
-                  <figcaption class="projet-name">art eyes</figcaption>
+                  <figcaption>art eyes</figcaption>
                 </figure>
               </a>
             </li>
-            <li>
+            <li class="projet__el">
               <a href="#">
                 <figure class="figure">
                   <img src="./assets/images/projet3.jpg" alt="">
-                  <figcaption class="projet-name">tabtab</figcaption>
+                  <figcaption>tabtab</figcaption>
                 </figure>
               </a>
             </li>
-            <li>
+            <li class="projet__el">
               <a href="#">
                 <figure class="figure">
                   <img src="./assets/images/projet4.jpg" alt="">
-                  <figcaption class="projet-name">πku</figcaption>
+                  <figcaption>πku</figcaption>
                 </figure>
               </a>
             </li>
-            <li>
+            <li class="projet__el">
               <a href="#">
                 <figure class="figure">
                   <img src="./assets/images/projet2.jpg" alt="">
-                  <figcaption class="projet-name">(sa)voir</figcaption>
+                  <figcaption>(sa)voir</figcaption>
                 </figure>
               </a>
             </li>
           </ul>
-          <div class="flex-3"></div>
+          <div></div>
+        </div>
+        <div class="info display">
+          <div class="content-info">
+            <img src="./assets/images/port.jpg" data-key="image" alt="#">
+            <div>
+              <h2 class="title" data-key="name">titre projet</h2>
+              <h3 class="title title--r" data-key="titre2">introduction en une phrase du projet et voila c'est tout</h3>
+              <p data-key="paragraphe1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, culpa rem
+                soluta maxime vel saepe ab dolor ipsum deleniti id doloribus hic quaerat veritatis similique, quis quo
+                dolores odit iusto. </p>
+              <p data-key="paragraphe2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, culpa rem
+                soluta maxime vel saepe ab dolor ipsum deleniti id doloribus hic quaerat veritatis similique, quis quo
+                dolores odit iusto. </p>
+              <a href="#" data-key="link">visiter </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>
-    <div class="info display">
-      <div class="info-flex">
-        <img class="img-open" data-key="image" src="./assets/images/port.jpg" alt="#">
-        <div class="info-content">
-          <h3 data-key="name">titre projet</h3>
-          <h4 data-key="titre2">introduction en une phrase du projet et voila c'est tout</h4>
-          <p data-key="paragraphe1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, culpa rem soluta
-            maxime vel saepe ab dolor ipsum deleniti id doloribus hic quaerat veritatis similique, quis quo dolores odit
-            iusto. </p>
-          <p data-key="paragraphe2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, culpa rem soluta
-            maxime vel saepe ab dolor ipsum deleniti id doloribus hic quaerat veritatis similique, quis quo dolores odit
-            iusto. </p>
-        </div>
-        <a href="#">visiter </a>
-      </div>
-      <button class="button-info button">button</button>
-    </div>
-
-  </body>
-  <footer>
-  </footer>
 
   </body>
 
