@@ -1,13 +1,21 @@
 var data = require("../javascripts/json/projets.json");
-
+var numberOfProjetc;
 const dataString = document.querySelectorAll("[data-key]");
-
-const copy = () => {
-  dataString.forEach((element, index) => {
+for (const prop in data) {
+  numberOfProjetc = prop;
+}
+export const copy = (current) => {
+  dataString.forEach((element) => {
     let value = element.getAttribute("data-key");
+    element.innerHTML = data[current][value];
+    if (element.getAttribute("href")) {
+      element.setAttribute("href", data[current].linkUrl);
+    }
 
-    element.innerHTML = data[index][value];
+    if (element.getAttribute("src")) {
+      element.setAttribute("src", data[current].image);
+    }
   });
 };
 
-copy();
+export { numberOfProjetc };

@@ -5,16 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <!-- Méta Google -->
+    <meta name="title" content="olivier denis" />
+    <meta name="description" content="portfolio of olivier denis" />
+    <!-- Métas Facebook Opengraph -->
+    <meta property="og:title" content="olivier denis" />
+    <meta property="og:description" content="portfolio of olivier denis" />
+    <meta property="og:url" content="https://olivierdenis.be/" />
+    <meta property="og:image" content="http://olivierdenis.be/assets/images/portfolio.jpg" />
+    <meta property="og:type" content="website" />
+    <!-- Métas Twitter Card -->
+    <meta name="twitter:title" content="olivier denis" />
+    <meta name="twitter:description" content="portfolio of olivier denis" />
+    <meta name="twitter:url" content="https://olivierdenis.be/" />
+    <meta name="twitter:image" content="http://olivierdenis.be/assets/images/portfolio.jpg" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/image/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <title>portfolio2</title>
+    <title>olivier denis</title>
   </head>
 
   <body class="body">
     <button class="button display"></button>
     <nav class="nav nav--close">
       <div class="flex-nav">
+        <button class="button-nav"></button>
         <div class="nav-content">
           <h2 class="title title--r">A propos</h2>
           <p>Apprendre un language de programmation c'est comme apprendre une nouvelle langue. La limite des
@@ -22,7 +45,7 @@
           <ul class="nav-list">
             <li class="nav-list__el">
               <div></div>
-              <a href="#">Contacter moi</a>
+              <a href="mailto:hello@olivierdenis.be">Contacter moi</a>
             </li>
             <li class="nav-list__el">
               <div></div>
@@ -36,18 +59,18 @@
       </div>
     </nav>
     <div class="flex-section">
-      <!-- <section class="section section--1">
+      <section class="section section--1">
         <div class="flex-content">
           <div class="content-1">
             <h1 class="title">Hi i’m Olivier</h1>
             <h2 class="title title--m">web developper & designer</h2>
             <ul class="link">
-              <li class="link__el"><a href="#">github</a></li>
-              <li class="link__el"><a href="#">linkedln</a></li>
-              <li class="link__el"><a href="#">behance</a></li>
+              <li class="link__el" id="link1"><a href="#">github</a></li>
+              <li class="link__el" id="link2"><a href="#">linkedln</a></li>
+              <li class="link__el" id="link3"><a href="#">behance</a></li>
             </ul>
           </div>
-          <svg class="line display" width="90px" height="610">
+          <svg class="line " width="90px" height="610">
             <line x1="0" y1="0" x2="90" y2="0" stroke="white" stroke-width="5px"></line>
             <line x1="0" y1="0" x2="0" y2="585" stroke="white" stroke-width="5px"></line>
             <line x1="0" y1="585" x2="90" y2="585" stroke="white" stroke-width="3px"></line>
@@ -57,11 +80,11 @@
           <div class="hide-bar2"></div>
           <div class="hide-red"></div>
         </div>
-      </section> -->
+      </section>
       <section class="section section--2">
         <div class="content-2">
           <ul class="flex-2 projet">
-            <li class="projet__el">
+            <li class="projet__el" id="1">
               <a href="#">
                 <figure class="figure">
                   <img src="./assets/images/projet1.jpg" alt="">
@@ -69,7 +92,7 @@
                 </figure>
               </a>
             </li>
-            <li class="projet__el">
+            <li class="projet__el" id="2">
               <a href="#">
                 <figure class="figure">
                   <img src="./assets/images/projet3.jpg" alt="">
@@ -77,7 +100,7 @@
                 </figure>
               </a>
             </li>
-            <li class="projet__el">
+            <li class="projet__el" id="3">
               <a href="#">
                 <figure class="figure">
                   <img src="./assets/images/projet4.jpg" alt="">
@@ -85,7 +108,7 @@
                 </figure>
               </a>
             </li>
-            <li class="projet__el">
+            <li class="projet__el" id="4">
               <a href="#">
                 <figure class="figure">
                   <img src="./assets/images/projet2.jpg" alt="">

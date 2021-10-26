@@ -6,6 +6,7 @@
 @import "base";
 @import "titles";
 @import "buttons";
+@import "animations";
 
 .body {
   position: relative;
@@ -81,7 +82,7 @@
   height: 100vh;
   background-color: var(--color-black);
   color: var(--color-white);
-  z-index: 1;
+  z-index: 2;
   transition: transform 0.4s var(--ease), opacity 0.4s;
 
   @include md {
@@ -161,6 +162,10 @@
 
         @include sm {
           margin-bottom: 25px;
+        }
+
+        @include xl {
+          padding: 20px 0 15px 0;
         }
       }
       a {
@@ -275,6 +280,7 @@
   top: 0;
   left: 0;
   z-index: 2;
+  transform: translate(100%, 0);
 
   .content-info {
     @include xl {

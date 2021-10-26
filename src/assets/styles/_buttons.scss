@@ -21,6 +21,7 @@
       width: 40px;
       height: 40px;
       margin-right: 25px;
+      opacity: 0;
     }
 
     @include md {
@@ -57,7 +58,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
-  opacity: 1;
+  opacity: 0;
 }
 
 @keyframes scrollDown {
@@ -84,6 +85,7 @@
   cursor: pointer;
   opacity: 1;
   border: none;
+  opacity: 0;
 
   @include sm {
     width: 50px;
@@ -98,4 +100,39 @@
 
 .button--close {
   background-image: url("../images/closeW.svg");
+}
+
+.button-nav {
+  display: block;
+  background-image: url("../images/closeW.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 75;
+  cursor: pointer;
+  border: none;
+
+  opacity: 0;
+}
+
+.button-nav-anim {
+  animation-name: buttonNav;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes buttonNav {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    left: 40%;
+    opacity: 1;
+  }
 }

@@ -5,7 +5,9 @@
         "titre2": "Lorem ipsum dolor sit amet consectetur",
         "paragraphe1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.  ",
         "paragraphe2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.  ",
-        "image" : "./assets/images/projet1.jpg"
+        "image" : "./assets/images/projet1.jpg",
+        "link" : "visiter",
+        "linkUrl" : "https://www.wikipedia.org"
     },
     "1" : {
         "name" : "projet2",
@@ -13,7 +15,9 @@
         "titre2": "Lorem ipsum dolor sit amet consectetur",
         "paragraphe1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.  ",
         "paragraphe2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.  ",
-        "image" : "./assets/images/projet3.jpg"
+        "image" : "./assets/images/projet2.jpg",
+        "link" : "visiter",
+        "linkUrl" : "https://www.facebook.com"
     },
     "2" : {
         "name" : "projet3",
@@ -21,7 +25,9 @@
         "titre2": "Lorem ipsum dolor sit amet consectetur",
         "paragraphe1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.  ",
         "paragraphe2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.  ",
-        "image" : "./assets/images/projet4.jpg"
+        "image" : "./assets/images/projet3.jpg",
+        "link" : "visiter",
+        "linkUrl" : "https://www.wikipedia.org"
     },
     "3" : {
         "name" : "projet4",
@@ -29,7 +35,9 @@
         "titre2": "Lorem ipsum dolor sit amet consectetur",
         "paragraphe1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.  ",
         "paragraphe2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.  ",
-        "image" : "./assets/images/projet2.jpg"
+        "image" : "./assets/images/projet4.jpg",
+        "link" : "visiter",
+        "linkUrl" : "https://www.wikipedia.org"
     },
     "4" : {
         "name" : "projet4",
@@ -37,7 +45,9 @@
         "titre2": "Lorem ipsum dolor sit amet consectetur",
         "paragraphe1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.  ",
         "paragraphe2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.  ",
-        "image" : "./assets/images/projet.jpg"
+        "image" : "./assets/images/projet.jpg",
+        "link" : "visiter",
+        "linkUrl" : "https://www.wikipedia.org"
     },
     "5" : {
         "name" : "projet4",
@@ -45,6 +55,8 @@
         "titre2": "Lorem ipsum dolor sit amet consectetur",
         "paragraphe1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.  ",
         "paragraphe2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi iure possimus iste officia aut nostrum fugiat atque ducimus fuga rem, cumque sed minus at quidem explicabo expedita! Incidunt, sapiente.  ",
-        "image" : "./assets/images/projet.jpg"
+        "image" : "./assets/images/projet.jpg",
+        "link" : "visiter",
+        "linkUrl" : "https://www.wikipedia.org"
     }
 }

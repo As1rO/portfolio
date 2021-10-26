@@ -1,0 +1,53 @@
+.line {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  z-index: 1;
+  left: inherit;
+  right: 5%;
+  top: 50%;
+  transform: translate(0, -50%) scale(0.5);
+
+  @include sm {
+    transform: translate(0, -50%) scale(1);
+  }
+}
+.hide-red {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: var(--color-red);
+
+  top: 0;
+}
+
+.hide-bar {
+  display: inline-block;
+  width: 150px;
+  height: 50vh;
+  position: absolute;
+  background-color: var(--color-red);
+  right: 0;
+  bottom: 0;
+  z-index: 55;
+
+  @include xl {
+    width: 300px;
+  }
+}
+
+.hide-bar2 {
+  display: inline-block;
+  width: 150px;
+  height: 50vh;
+  position: absolute;
+  background-color: var(--color-red);
+  right: 0;
+  top: 0;
+  z-index: 55;
+  @include xl {
+    width: 300px;
+  }
+}
