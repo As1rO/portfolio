@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CustomEase } from "gsap/CustomEase";
-import { body, button, nav } from "./variables";
+import { body, button, nav, projetEl } from "./variables";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
@@ -136,6 +136,12 @@ function ftlOut() {
 let bool = true;
 let bool2 = false;
 let bool3 = false;
+let bool4 = false;
+projetEl.forEach((element) => {
+  element.addEventListener("click", (e) => {
+    bool4 = true;
+  });
+});
 
 window.addEventListener("wheel", (event) => {
   window.addEventListener("scroll", (e) => {
@@ -178,27 +184,33 @@ window.addEventListener("wheel", (event) => {
     (window.matchMedia("(min-width: 1300px)").matches && delta == -1)
   ) {
     //// scroll up
-    ftlIn();
+    if (window.matchMedia("(max-width: 1300px)").matches && bool4 === true) {
+      button.addEventListener("click", (e) => {
+        bool4 = false;
+      });
+    } else {
+      ftlIn();
 
-    gsap.to(".body", {
-      duration: 0.5,
-      delay: 0.5,
-      x: "0",
-      ease: "power2.out",
+      gsap.to(".body", {
+        duration: 0.5,
+        delay: 0.5,
+        x: "0",
+        ease: "power2.out",
 
-      overflowY: "hidden",
-      overflowX: "hidden",
-    });
-    if (window.matchMedia("(min-width: 1300px)").matches) {
-      button.style.left = "5%";
+        overflowY: "hidden",
+        overflowX: "hidden",
+      });
+      if (window.matchMedia("(min-width: 1300px)").matches) {
+        button.style.left = "5%";
+      }
+      setTimeout(() => {
+        body.style.transform = "inherit";
+      }, 2500);
+
+      nav.style.marginLeft = "0%";
+
+      bool = true;
+      bool2 = false;
     }
-    setTimeout(() => {
-      body.style.transform = "inherit";
-    }, 2500);
-
-    nav.style.marginLeft = "0%";
-
-    bool = true;
-    bool2 = false;
   }
 });

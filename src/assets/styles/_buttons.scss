@@ -5,9 +5,10 @@
   @include sm {
     padding-top: 25px;
   }
-  &__el {
+  &__el a {
     width: 25px;
     height: 25px;
+    display: inline-block;
 
     background-image: url("../images/github.svg");
     background-repeat: no-repeat;
@@ -21,7 +22,7 @@
       width: 40px;
       height: 40px;
       margin-right: 25px;
-      opacity: 0;
+      opacity: 1;
     }
 
     @include md {
@@ -36,11 +37,11 @@
     }
   }
 
-  &__el:nth-child(2) {
+  .link2 {
     background-image: url("../images/linkedin.svg");
   }
 
-  &__el:nth-child(3) {
+  .link3 {
     background-image: url("../images/logo-behance.svg");
   }
 }
@@ -110,7 +111,7 @@
   background-color: transparent;
   width: 50px;
   height: 50px;
-  position: fixed;
+  position: absolute;
   top: 50%;
   transform: translate(0, -50%);
   z-index: 75;
@@ -118,11 +119,12 @@
   border: none;
 
   opacity: 0;
+  right: 10%;
 }
 
 .button-nav-anim {
   animation-name: buttonNav;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
@@ -132,7 +134,6 @@
     opacity: 0;
   }
   100% {
-    left: 40%;
     opacity: 1;
   }
 }

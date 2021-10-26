@@ -7,7 +7,9 @@ for (const prop in data) {
 export const copy = (current) => {
   dataString.forEach((element) => {
     let value = element.getAttribute("data-key");
-    element.innerHTML = data[current][value];
+    if (data[current][value] && value != "image") {
+      element.innerHTML = data[current][value];
+    }
     if (element.getAttribute("href")) {
       element.setAttribute("href", data[current].linkUrl);
     }

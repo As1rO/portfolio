@@ -1,7 +1,6 @@
-import { button, nav, info, body } from "./variables";
+import { button, nav, info, body, projetEl } from "./variables";
 import { copy, numberOfProjetc } from "./projets";
 
-const projetEl = document.querySelectorAll(".projet__el");
 const content2 = document.querySelector(".content-2");
 const buttonNav = document.querySelector(".button-nav");
 let verificateur = false;
