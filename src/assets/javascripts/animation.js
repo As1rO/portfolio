@@ -137,58 +137,49 @@ let bool = true;
 let bool2 = false;
 let bool3 = false;
 let bool4 = false;
+let posY;
+let posYEnd;
+
 projetEl.forEach((element) => {
   element.addEventListener("click", (e) => {
+    console.log("clicke");
     bool4 = true;
+
+    button.addEventListener("click", (e) => {
+      bool4 = false;
+    });
   });
 });
 
-window.addEventListener("wheel", (event) => {
-  window.addEventListener("scroll", (e) => {
-    if (window.scrollY === 0) {
-      bool3 = true;
-    } else {
-      bool3 = false;
-    }
+if (window.matchMedia("(max-width: 1300px)").matches) {
+  window.addEventListener("touchstart", (e) => {
+    posY = e.touches[0].clientY;
   });
-  const delta = Math.sign(event.deltaY);
-  if (delta == 1 && bool == true) {
-    /// scroll down
-    ftlOut();
 
-    gsap.to(".body", {
-      duration: 0.5,
-      delay: 2.5,
-      x: "-50%",
-      ease: CustomEase.create("custom", "M0,0 C1,0 0,1 1,1 "),
-      overflowY: "auto",
-      overflowX: "hidden",
-    });
+  window.addEventListener("touchend", (e) => {
+    posYEnd = e.changedTouches[0].clientY;
+    if (posY > posYEnd && bool === true) {
+      //scroll down
 
-    if (window.matchMedia("(min-width: 1300px)").matches) {
-      setTimeout(() => {
-        button.style.left = "55%";
-      }, 3000);
-    }
+      ftlOut();
 
-    setTimeout(() => {
-      nav.style.marginLeft = "50%";
-    }, 3000);
-
-    bool = false;
-    bool2 = true;
-  }
-
-  if (
-    (delta == -1 && bool2 == true && bool3 === true) ||
-    (window.matchMedia("(min-width: 1300px)").matches && delta == -1)
-  ) {
-    //// scroll up
-    if (window.matchMedia("(max-width: 1300px)").matches && bool4 === true) {
-      button.addEventListener("click", (e) => {
-        bool4 = false;
+      gsap.to(".body", {
+        duration: 0.5,
+        delay: 2.5,
+        x: "-50%",
+        ease: CustomEase.create("custom", "M0,0 C1,0 0,1 1,1 "),
+        overflowY: "auto",
+        overflowX: "hidden",
       });
-    } else {
+
+      setTimeout(() => {
+        nav.style.marginLeft = "50%";
+      }, 3000);
+
+      bool = false;
+    }
+    if (posY < posYEnd && bool4 === false && window.pageYOffset === 0) {
+      //scroll up
       ftlIn();
 
       gsap.to(".body", {
@@ -200,17 +191,85 @@ window.addEventListener("wheel", (event) => {
         overflowY: "hidden",
         overflowX: "hidden",
       });
-      if (window.matchMedia("(min-width: 1300px)").matches) {
-        button.style.left = "5%";
-      }
+
       setTimeout(() => {
         body.style.transform = "inherit";
       }, 2500);
 
       nav.style.marginLeft = "0%";
-
       bool = true;
-      bool2 = false;
     }
-  }
-});
+  });
+} else {
+  window.addEventListener("wheel", (event) => {
+    window.addEventListener("scroll", (e) => {
+      if (window.mouseY === 0) {
+        bool3 = true;
+      } else {
+        bool3 = false;
+      }
+    });
+    const delta = Math.sign(event.deltaY);
+    if (delta == 1 && bool == true) {
+      /// scroll down
+      ftlOut();
+
+      gsap.to(".body", {
+        duration: 0.5,
+        delay: 2.5,
+        x: "-50%",
+        ease: CustomEase.create("custom", "M0,0 C1,0 0,1 1,1 "),
+        overflowY: "auto",
+        overflowX: "hidden",
+      });
+
+      if (window.matchMedia("(min-width: 1300px)").matches) {
+        setTimeout(() => {
+          button.style.left = "55%";
+        }, 3000);
+      }
+
+      setTimeout(() => {
+        nav.style.marginLeft = "50%";
+      }, 3000);
+
+      bool = false;
+      bool2 = true;
+    }
+
+    if (
+      (delta == -1 && bool2 == true && bool3 === true) ||
+      (window.matchMedia("(min-width: 1300px)").matches && delta == -1)
+    ) {
+      //// scroll up
+      if (window.matchMedia("(max-width: 1300px)").matches && bool4 === true) {
+        button.addEventListener("click", (e) => {
+          bool4 = false;
+        });
+      } else {
+        ftlIn();
+
+        gsap.to(".body", {
+          duration: 0.5,
+          delay: 0.5,
+          x: "0",
+          ease: "power2.out",
+
+          overflowY: "hidden",
+          overflowX: "hidden",
+        });
+        if (window.matchMedia("(min-width: 1300px)").matches) {
+          button.style.left = "5%";
+        }
+        setTimeout(() => {
+          body.style.transform = "inherit";
+        }, 2500);
+
+        nav.style.marginLeft = "0%";
+
+        bool = true;
+        bool2 = false;
+      }
+    }
+  });
+}
