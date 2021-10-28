@@ -1,7 +1,14 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CustomEase } from "gsap/CustomEase";
-import { body, button, nav, projetEl } from "./variables";
+import {
+  body,
+  button,
+  nav,
+  projetEl,
+  snakeBlock,
+  snakeClose,
+} from "./variables";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
@@ -227,6 +234,8 @@ if (window.matchMedia("(max-width: 1300px)").matches) {
         setTimeout(() => {
           button.style.left = "55%";
         }, 3000);
+        snakeBlock.style.marginLeft = "50%";
+        snakeClose.style.marginLeft = "50%";
       }
 
       setTimeout(() => {
@@ -242,6 +251,8 @@ if (window.matchMedia("(max-width: 1300px)").matches) {
       (window.matchMedia("(min-width: 1300px)").matches && delta == -1)
     ) {
       //// scroll up
+      snakeBlock.style.marginLeft = "0";
+      snakeClose.style.marginLeft = "0";
       if (window.matchMedia("(max-width: 1300px)").matches && bool4 === true) {
         button.addEventListener("click", (e) => {
           bool4 = false;

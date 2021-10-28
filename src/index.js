@@ -5,3 +5,4 @@ import "./assets/javascripts/projets";
 import "./assets/javascripts/app";
 import "./assets/javascripts/animation";
 import "./assets/javascripts/nav";
+import "./assets/javascripts/snake";
